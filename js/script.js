@@ -1,12 +1,21 @@
-function pow(b,x){
-	var a = 1;
-	do{
-		a *= b;
-		--x;
-	} while ( x>0 )
+function sumTo(a){
+	if(a!=1){
+		return a + sumTo(a-1)
+	}else return a;
+}
+
+function sumToo(b) {
+	var a = 0;
+	while ( b >= 1 ){
+		a += b;
+		b--;
+	}
 	return a;
 }
 
-var a = 10;
-var b = 5;
-alert(pow(a,b));
+
+var a = 100;
+document.writeln(sumTo(a));
+
+var b = 100;
+document.writeln(sumToo(b));
