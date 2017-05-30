@@ -1,3 +1,2 @@
-alert("Первый");
-alert("Второй");
-alert("Третий");
+var message;
+message = 'Hello';
