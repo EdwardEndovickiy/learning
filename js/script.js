@@ -1,11 +1,12 @@
-function min(a,b) {
-	return (a < b) ? alert("b > a") : 
-	(a == b) ? alert("a = b") : alert("a > b") 
+function pow(b,x){
+	var a = 1;
+	do{
+		a *= b;
+		--x;
+	} while ( x>0 )
+	return a;
 }
 
-var a = b = 3;
-min(a,b); 
-
-var a = 3;
-var b = 4;
-min(a,b);
+var a = 10;
+var b = 5;
+alert(pow(a,b));
