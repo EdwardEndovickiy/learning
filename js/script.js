@@ -1,20 +1,11 @@
-function exampleFun(a) {
-	switch (a){
-		case 0:
-			alert(0);
-			break;
-		case 1:
-			alert(1);
-			break;
-		case 2:
-		case 3:
-			alert("2, 3");
-			break;
-		default: 
-			alert("NO!");
-			break;		
-	}
+function min(a,b) {
+	return (a < b) ? alert("b > a") : 
+	(a == b) ? alert("a = b") : alert("a > b") 
 }
 
-var a = +prompt("a", "");
-exampleFun(a);
+var a = b = 3;
+min(a,b); 
+
+var a = 3;
+var b = 4;
+min(a,b);
