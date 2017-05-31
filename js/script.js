@@ -9,6 +9,7 @@ function sumToo(b) {
 	while ( b >= 1 ){
 		a += b;
 		b--;
+		console.log(a,b);
 	}
 	return a;
 }
